@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestilling av kinobiletter</title>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+<div>
+  <label for="quantity">Antall:</label>
+  <input type="number" id="quantity" name="quantity" required>
+</div>
+<div>
+  <label for="firstname">Fornavn:</label>
+  <input type="text" id="firstname" name="firstname" required>
+</div>
+<div>
+  <label for="lastname">Etternavn:</label>
+  <input type="text" id="lastname" name="lastname" required>
+</div>
+<div>
+  <label for="phonenumber">Telfnr:</label>
+  <input type="tel" id="phonenumber" name="phonenumber" required pattern="[0-9]{8}">
+</div>
+<div>
+  <label for="email">E-post:</label>
+  <input type="email" id="email" name="email" required>
+</div>
+<button id="purchase">Kjøp billett</button>
+<h2>Alle billetter</h2>
+<ul id="ticketList"></ul>
+<button id="deleteAll">Slett alle billettene</button>
+
+<script src="script.js"></script>
+</body>
+</html>
