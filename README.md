@@ -4,7 +4,7 @@ Oslomet brukernavn: Rabas7516
 
 Github brukernavn: Rahemb
 
-GitHub repo URL: https://github.com/Rahemb/OBLIG1-DATA1700
+GitHub repo URL: https://github.com/Rahemb/OBLIG1-DATA1700.git
 
 Fult navn: Rahem Bashir
 
