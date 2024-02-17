@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const lastname = document.getElementById('lastname').value; // Etternavn
         const phonenumber = document.getElementById('phonenumber').value; // Telefonnummer
         const email = document.getElementById('email').value; // E-postadresse
+        const movie = document.getElementById('movie').value; // Valgt film
 
         // Validerer inputverdiene
         if (!validateQuantity(quantity)) {
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Legger til billetten i arrayet
         const ticket = {
+            movie,
             quantity,
             firstname,
             lastname,
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         tickets.forEach(function(ticket, index) {
             const li = document.createElement('li');
             // Viser informasjonen om billetten i listen
-            li.textContent = `Billett ${index + 1}: Antall - ${ticket.quantity}, Navn - ${ticket.firstname} ${ticket.lastname}, Telefon - ${ticket.phonenumber}, E-post - ${ticket.email}`;
+            li.textContent = `Billett ${index + 1}: Film - ${ticket.movie}, Antall - ${ticket.quantity}, Navn - ${ticket.firstname} ${ticket.lastname}, Telefon - ${ticket.phonenumber}, E-post - ${ticket.email}`;
             ticketList.appendChild(li); // Legger til elementet i listen
         });
     }
@@ -75,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('lastname').value = ''; // Nullstiller etternavn-feltet
         document.getElementById('phonenumber').value = ''; // Nullstiller telefonnummer-feltet
         document.getElementById('email').value = ''; // Nullstiller e-post-feltet
+        document.getElementById('movie').value = ''; // Nullstiller film-feltet
     }
 
     // Funksjon for å validere antallet
